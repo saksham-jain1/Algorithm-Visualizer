@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Components/Home";
+import logo from "./Assets/logo.png";
+import PageNotFound from "./Components/PageNotFound";
+import BinarySearch from "./Components/BinarySearch/BinarySearch";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="navbar">
+        <img src={logo} alt="logo.png" id="logo" /> Algorithm Vizualizer
+      </div>
+      <div className="body">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/binarySearch" element={<BinarySearch/>} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </div>
     </div>
   );
 }
