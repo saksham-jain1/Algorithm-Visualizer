@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import logo from "./Assets/logo.png";
 import PageNotFound from "./Components/PageNotFound";
 import BinarySearch from "./Components/BinarySearch/BinarySearch";
+import BubbleShort from "./Components/BubbleSort/BubbleSort";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <div className="body">
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/binarySearch" element={<BinarySearch/>} />
+          <Route path="/binarySearch" element={<BinarySearch />} />
+          <Route path="/bubbleSort" element={<BubbleShort />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>

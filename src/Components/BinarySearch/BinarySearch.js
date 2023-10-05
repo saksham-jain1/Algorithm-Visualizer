@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./BinarySearch.css";
+import styles from "./BinarySearch.css";
 import Array from "./Array";
-import code from "../../Assets/snippet.png";
+import code from "../../Assets/binarySearch.png";
 
 const BinarySearch = (start, mid, end) => {
   const [size, setSize] = useState(15);
@@ -207,7 +207,7 @@ const BinarySearch = (start, mid, end) => {
         </div>
         <div className="description">
           <h3>
-            Conditions Binary search is effective under the following
+            Binary search is effective under the following
             conditions:
           </h3>
           <ol>
@@ -225,7 +225,7 @@ const BinarySearch = (start, mid, end) => {
             </li>
           </ol>
           <br />
-          <h3>Advantages Binary search offers several advantages:</h3>
+          <h3>Advantages:</h3>
           <ul>
             <li>
               <b>Efficiency:</b> It has a time complexity of O(log n), making it
